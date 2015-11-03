@@ -6,3 +6,8 @@ script: mvn test
 
 notifications:
   slack: soniapigot:ab83h8hQuElrd33suGrHoZcb
+
+deploy:
+  provider: heroku
+  app: your-app-name # optional if it's the same as your repo name
+  api_key: "YOUR API TOKEN"
