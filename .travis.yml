@@ -2,7 +2,7 @@
 language: java
 
 #build software
-script: mvn test
+script: mvn package
 
 notifications:
   slack: soniapigot:ab83h8hQuElrd33suGrHoZcb
@@ -10,5 +10,4 @@ notifications:
 deploy:
   provider: heroku
   app: first-app-sonia # optional if it's the same as your repo name
-  api_key:
-    secure: 34be936f-0802-44e8-88c0-e705afe635a9
+  api_key: "34be936f-0802-44e8-88c0-e705afe635a9"
