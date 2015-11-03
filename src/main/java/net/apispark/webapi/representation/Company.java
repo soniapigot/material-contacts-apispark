@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Company implements Serializable {
 
-    private String id;
+    private int id;
     private String name;
     private List<String> tags;
     private Address address;
