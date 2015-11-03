@@ -1,5 +1,8 @@
 #configure travis
 language: java
 
-#build software 
+#build software
 script: mvn test
+
+notifications:
+  slack: soniapigot:ab83h8hQuElrd33suGrHoZcb
