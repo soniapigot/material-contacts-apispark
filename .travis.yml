@@ -2,7 +2,13 @@
 language: java
 
 #build software
-script: mvn test
+script: mvn install
 
 notifications:
   slack: soniapigot:ab83h8hQuElrd33suGrHoZcb
+
+deploy:
+  provider: heroku
+  app-name: first-app-sonia
+  api_key:
+    secure: 34be936f-0802-44e8-88c0-e705afe635a9
